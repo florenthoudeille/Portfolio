@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
+import '../App.css';
+import {
+  Link
+} from 'react-router-dom';
 
 class Header extends Component {
   render () {
     return (
-      <div className='Header'>
+      <nav className='header'>
         <img src='' alt='Florent Houdeillé'></img>
         <h1>Florent Houdeillé</h1>
-        <button to='' className='home'>Accueil</button>
-        <button to='' className='me'>Qui suis-je ?</button>
-        <button to='' className='project'>Projets personnels</button>
-        <button to='' className='references'>Références</button>
-      </div>
+        <div className='linkBox'>
+          <Link to='/' className='home'>Accueil</Link>
+          <Link to='/me' className='me'>Qui suis-je ?</Link>
+          <Link to='/project' className='project'>Projets personnels</Link>
+          <Link to='/reference' className='references'>Références</Link>
+        </div>
+      </nav>
     )
   }
-  
 };
 
 export default Header;
