@@ -1,3 +1,48 @@
+.Home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 20vh 0 0 0;
+}
+
 .cardLink {
-  border: 3px solid red;
+  position: relative;
+  width: fit-content;
+  border-radius: 5px;
+  /* margin: auto; */
+  transition: font-size ease-in-out 0.5s;
+}
+
+.cardLink img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  border-radius: 5px;
+  transition: filter ease-in-out 0.5s;
+}
+
+.cardLink img:hover {
+  filter: grayscale(0%)
+}
+
+.cardLink a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: white;
+  z-index: 1;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px black;
+  text-align: center;
+  /* transition: font-size ease-in-out 0.5s; */
+}
+
+.cardLink a:hover {
+  font-size: 22px;
 }

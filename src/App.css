@@ -9,6 +9,7 @@
 
 .header img {
   padding: 5px;
+  width: 100px;
 }
 
 .header h1 {
@@ -34,12 +35,15 @@
 }
 
 .linkBox a:hover {
-  font-weight: bold;
-  color: rgb(56, 215, 255);
+  color: #68afdf;
 }
+
+/* //////////////////////// Body //////////////////////////// */
 
 body {
   background-image: url('./components/image/background-polygon-lightblue.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* //////////////////////// Home //////////////////////////// */
